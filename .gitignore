@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.sqlite3
+
+# Environment files
+.env
+.venv/
+env/
+venv/
+*.env
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python virtual environment (Anaconda or others)
+*.conda
+*.egg-info/
+*.egg
+
+# FastAPI specific (if you use static or uploaded files later)
+static/
+uploads/
+
+# IDE files
+.vscode/
+.idea/
+
+# Test/Cache files
+.pytest_cache/
+.cache/
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Uvicorn reload temporary files
+*.pid
+
+# Optional: If using VS Code with Python interpreter path in workspace
+.vscode/settings.json
