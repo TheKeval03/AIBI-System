@@ -23,6 +23,12 @@ async def get_resume(file: UploadFile = File(...)):
         if not extracted_text:
             logger.warning(f"No text extracted from file: {file.filename}")
             raise HTTPException(status_code=400, detail="No text could be extracted from the PDF.")
+
+            # ✅ LOG RESUME DETAILS HERE
+        logger.info("Extracted Resume Text:")
+        print("===================================")
+        print(extracted_text)
+        print("===================================")
         
         logger.info(f"File processed successfully: {file.filename}")
         return {"extracted_text": extracted_text}
