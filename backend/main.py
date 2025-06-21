@@ -7,7 +7,7 @@ from routes.UserLoginRoute import router as UserLogin
 
 app = FastAPI()
 
-# ✅ Add CORS middleware here
+
 origins = [
     "https://preview--aibi-interview-flow.lovable.app",
     "http://localhost:3000",
@@ -22,7 +22,7 @@ app.add_middleware(
     allow_headers=["*"],              # Allow all headers
 )
 
-# ✅ Keep your original code below this
+
 app.include_router(ResumeParserRouter)
 app.include_router(GetUserRoute)
 app.include_router(UserLogin)

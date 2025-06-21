@@ -16,6 +16,8 @@ env/
 venv/
 myvenv/
 *.env
+myenv/
+myenv
 
 # Logs
 logs/
