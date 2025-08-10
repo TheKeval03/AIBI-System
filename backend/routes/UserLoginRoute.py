@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException, Request
+from fastapi import APIRouter, HTTPException
 from schemas.request.UserLoginRequest import LoginRequest
 from repositories.UserLoginRepository import UserLoginRepository
 

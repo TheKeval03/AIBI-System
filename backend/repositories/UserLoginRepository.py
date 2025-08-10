@@ -32,5 +32,4 @@ class UserLoginRepository:
         if not UserLoginRepository.verify_password(password, user['password']):
             raise HTTPException(status_code=401, detail="Incorrect password")
 
-        # Optional: return JWT token if you want session management
         return {"message": "Login successful", "user": user}
